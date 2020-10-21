@@ -1,5 +1,4 @@
 package org.academiadecodigo.bootcamp.concurrency;
-
 import org.academiadecodigo.bootcamp.concurrency.bqueue.BQueue;
 
 /**
@@ -21,16 +20,11 @@ public class Consumer implements Runnable {
 
     @Override
     public void run() {
-
         consume();
     }
 
     public void consume() {
-
-
-
         while (elementNum != 0){
-
             try{
                 Thread.sleep(200);
                 queue.poll();
@@ -38,14 +32,6 @@ public class Consumer implements Runnable {
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
-
-
-
         }
-
     }
-
 }
-
-
-
