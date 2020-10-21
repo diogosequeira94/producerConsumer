@@ -24,14 +24,9 @@ public class Main {
         Thread t4 = new Thread(c2);
         t4.setName("Consumer 2");
 
-
         t1.start();
         t2.start();
         t3.start();
         t4.start();
-
-
     }
-
 }
-
