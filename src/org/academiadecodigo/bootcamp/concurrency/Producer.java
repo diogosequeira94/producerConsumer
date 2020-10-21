@@ -21,17 +21,12 @@ public class Producer implements Runnable {
         this.elementNum = elementNum;
     }
 
-
-
     @Override
     public void run() {
-
         produce();
-
     }
 
     public void produce() {
-
         while (elementNum != 0) {
             try {
                 Thread.sleep(100);
@@ -40,8 +35,6 @@ public class Producer implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
-
         }
     }
 }
